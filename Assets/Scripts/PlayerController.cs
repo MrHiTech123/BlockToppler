@@ -9,21 +9,25 @@ public class PlayerController : MonoBehaviour
 	public HingeJoint2D leftLeg;
 	public HingeJoint2D rightLeg;
 	
+	public FixedJoint2D hand;
+	
 	private JointMotor2D leftArmMotor;
 	private JointMotor2D rightArmMotor;
 	private JointMotor2D leftLegMotor;
 	private JointMotor2D rightLegMotor;
 	
 	
-	private float power = 1;
+	
+	private float armPower = 1;
+	private float legPower = 100;
 	
     // Start is called before the first frame update
     void Start()
     {
-        leftArmMotor = leftArm.motor;
-		rightArmMotor = rightArm.motor;
-		leftLegMotor = leftLeg.motor;
-		rightLegMotor = rightLeg.motor;
+		GetMotors();
+		leftArmMotor.motorSpeed = 500;
+		rightArmMotor.motorSpeed = -500;
+		SetMotors();
     }
 	
 	/**
@@ -49,56 +53,72 @@ public class PlayerController : MonoBehaviour
 		return ChangeAbsValue(angle, num, -delta);
 	}
 	
+	void GetMotors() {
+		leftArmMotor = leftArm.motor;
+		rightArmMotor = rightArm.motor;
+		leftLegMotor = leftLeg.motor;
+		rightLegMotor = rightLeg.motor;
+	}
+	
+	void SetMotors() {
+		leftArm.motor = leftArmMotor;
+		rightArm.motor = rightArmMotor;
+		leftLeg.motor = leftLegMotor;
+		rightLeg.motor = rightLegMotor;
+	}
 	void DoMovement() {
-		Debug.Log("Doing movement");
-		if (Input.GetKey(KeyCode.A)) {
-			leftArmMotor.motorSpeed = MoveToZero(leftArm.jointAngle, leftArmMotor.motorSpeed, power);
-		}
-		else if (Input.GetKey(KeyCode.S)) {
-			leftArmMotor.motorSpeed = MoveFromZero(leftArm.jointAngle, leftArmMotor.motorSpeed, power);
-		}
-		else {
-			leftArmMotor.motorSpeed = 0;
-		}
+		GetMotors();
 		
+		Debug.Log("Doing movement");
 		if (Input.GetKey(KeyCode.D)) {
-			leftLegMotor.motorSpeed = power;
+			leftArmMotor.motorSpeed = MoveToZero(leftArm.jointAngle, leftArmMotor.motorSpeed, armPower);
 		}
 		else if (Input.GetKey(KeyCode.F)) {
-			leftLegMotor.motorSpeed = -power;
+			leftArmMotor.motorSpeed = MoveFromZero(leftArm.jointAngle, leftArmMotor.motorSpeed, armPower);
+		}
+		else {
+			leftArmMotor.motorSpeed /= 1.1f;
+		}
+		
+		if (Input.GetKey(KeyCode.C)) {
+			leftLegMotor.motorSpeed = legPower;
+		}
+		else if (Input.GetKey(KeyCode.V)) {
+			leftLegMotor.motorSpeed = -legPower;
 		}
 		else {
 			leftLegMotor.motorSpeed = 0;
 		}
 		
-		if (Input.GetKey(KeyCode.J)) {
-			rightLegMotor.motorSpeed = power;
+		if (Input.GetKey(KeyCode.N)) {
+			rightLegMotor.motorSpeed = legPower;
 		}
-		else if (Input.GetKey(KeyCode.K)) {
-			rightLegMotor.motorSpeed = -power;
+		else if (Input.GetKey(KeyCode.M)) {
+			rightLegMotor.motorSpeed = -legPower;
 		}
 		else {
 			rightLegMotor.motorSpeed = 0;
 		}
 		
-		if (Input.GetKey(KeyCode.L)) {
-			rightArmMotor.motorSpeed = MoveFromZero(rightArm.jointAngle, rightArmMotor.motorSpeed, power);
+		if (Input.GetKey(KeyCode.J)) {
+			rightArmMotor.motorSpeed = MoveFromZero(rightArm.jointAngle, rightArmMotor.motorSpeed, armPower);
 		}
-		else if (Input.GetKey(KeyCode.Semicolon)) {
-			rightArmMotor.motorSpeed = MoveToZero(rightArm.jointAngle, rightArmMotor.motorSpeed, power);
+		else if (Input.GetKey(KeyCode.K)) {
+			rightArmMotor.motorSpeed = MoveToZero(rightArm.jointAngle, rightArmMotor.motorSpeed, armPower);
 		}
 		else {
-			rightArmMotor.motorSpeed = 0;
+			rightArmMotor.motorSpeed /= 1.1f;
+		}
+		
+		if (Input.GetKey(KeyCode.Space)) {
+			hand.breakForce = 0;
 		}
 		
 		
 		Debug.Log("Left angle " + leftArm.jointAngle);
 		Debug.Log("Right angle " + rightArm.jointAngle);
 		
-		leftArm.motor = leftArmMotor;
-		rightArm.motor = rightArmMotor;
-		leftLeg.motor = leftLegMotor;
-		rightLeg.motor = rightLegMotor;
+		SetMotors();
 	}
 	
     // Update is called once per frame
