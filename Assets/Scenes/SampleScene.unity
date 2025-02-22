@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 378530888}
   - component: {fileID: 378530890}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -486,6 +486,7 @@ GameObject:
   - component: {fileID: 492937014}
   - component: {fileID: 492937015}
   - component: {fileID: 492937016}
+  - component: {fileID: 492937017}
   m_Layer: 0
   m_Name: Torso
   m_TagString: Untagged
@@ -632,6 +633,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &492937017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492937012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7eebfb36d11040543bdcc57b2afc75e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftArm: {fileID: 1625873534}
+  rightArm: {fileID: 468269463}
+  leftLeg: {fileID: 1769885749}
+  rightLeg: {fileID: 795623590}
+  power: 1000
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1223,7 +1241,7 @@ HingeJoint2D:
   m_ConnectedAnchor: {x: -0.62263834, y: 0.22083107}
   m_UseMotor: 0
   m_Motor:
-    m_MotorSpeed: -100
+    m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 0
   m_AngleLimits:
