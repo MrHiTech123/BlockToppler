@@ -287,7 +287,7 @@ FixedJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -1.0483005, y: 0.7904513}
+  m_ConnectedAnchor: {x: 0, y: 0.7904513}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!1 &468269459
@@ -393,7 +393,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.5}
-  m_ConnectedAnchor: {x: -0.4084694, y: 0.22083107}
+  m_ConnectedAnchor: {x: 0.6473784, y: 0.22083107}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -816,13 +816,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795623585}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: -0.4424, z: -0.030700315}
+  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
+  m_LocalPosition: {x: 0.7, y: -0.32, z: -0.030700315}
   m_LocalScale: {x: 0.32705998, y: 1.6352999, z: 0.5451}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1811737288}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
 --- !u!212 &795623588
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -891,7 +891,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.5}
-  m_ConnectedAnchor: {x: -0.7454461, y: -0.51370543}
+  m_ConnectedAnchor: {x: 0.30523878, y: -0.50387883}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -1406,7 +1406,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.5}
-  m_ConnectedAnchor: {x: -1.6538508, y: 0.22083107}
+  m_ConnectedAnchor: {x: -0.6473784, y: 0.22083107}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -1515,13 +1515,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769885745}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: -0.4424, z: -0.030700315}
+  m_LocalRotation: {x: 0, y: 0, z: -0.258819, w: 0.9659259}
+  m_LocalPosition: {x: -0.7, y: -0.32, z: -0.030700315}
   m_LocalScale: {x: 0.32705998, y: 1.6352999, z: 0.5451}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1811737288}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30}
 --- !u!212 &1769885747
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1590,7 +1590,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.5}
-  m_ConnectedAnchor: {x: -1.3168749, y: -0.51370543}
+  m_ConnectedAnchor: {x: -0.30523878, y: -0.5038787}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0

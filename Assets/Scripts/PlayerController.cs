@@ -25,8 +25,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
 		GetMotors();
-		leftArmMotor.motorSpeed = 500;
-		rightArmMotor.motorSpeed = -500;
 		SetMotors();
     }
 	
