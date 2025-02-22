@@ -649,7 +649,6 @@ MonoBehaviour:
   rightArm: {fileID: 468269462}
   leftLeg: {fileID: 1769885748}
   rightLeg: {fileID: 795623589}
-  power: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
