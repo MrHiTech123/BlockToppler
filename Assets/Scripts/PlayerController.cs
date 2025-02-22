@@ -4,32 +4,53 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-	public Rigidbody2D leftArm;
-	public Rigidbody2D rightArm;
-	public Rigidbody2D leftLeg;
-	public Rigidbody2D rightLeg;
+	public HingeJoint2D leftArm;
+	public HingeJoint2D rightArm;
+	public HingeJoint2D leftLeg;
+	public HingeJoint2D rightLeg;
 	
-	public float power;
+	private JointMotor2D leftArmMotor;
+	private JointMotor2D rightArmMotor;
+	private JointMotor2D leftLegMotor;
+	private JointMotor2D rightLegMotor;
+	
+	
+	public float power = 1;
 	
     // Start is called before the first frame update
     void Start()
     {
-        
+        leftArmMotor = leftArm.motor;
+		rightArmMotor = rightArm.motor;
+		leftLegMotor = leftLeg.motor;
+		rightLegMotor = rightLeg.motor;
     }
-	
 	void DoMovement() {
-		if (Input.GetKeyDown(KeyCode.A)) {
-			leftArm.AddForce(Vector2.left * power, ForceMode2D.Force);
+		Debug.Log("Doing movement");
+		if (Input.GetKey(KeyCode.A)) {
+			leftArmMotor.motorSpeed += power;
+			Debug.Log("A key pressed, motorSpeed = " + leftArmMotor.motorSpeed);
+			
 		}
-		if (Input.GetKeyDown(KeyCode.S)) {
-			leftArm.AddForce(Vector2.right * power, ForceMode2D.Force);
+		if (Input.GetKey(KeyCode.S)) {
+			leftArmMotor.motorSpeed -= power;
+			Debug.Log("S key pressed, motorSpeed = " + leftArmMotor.motorSpeed);
 		}
 		
+		
+		
+		
+		leftArm.motor = leftArmMotor;
+		rightArm.motor = rightArmMotor;
+		leftLeg.motor = leftLegMotor;
+		rightLeg.motor = rightLegMotor;
 	}
 	
     // Update is called once per frame
     void Update()
     {
+		Debug.Log("Updating");
         DoMovement();
+		
     }
 }

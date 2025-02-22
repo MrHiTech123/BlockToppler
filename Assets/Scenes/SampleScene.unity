@@ -394,7 +394,7 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.5}
   m_ConnectedAnchor: {x: 0.6227433, y: 0.22083107}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
@@ -645,11 +645,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eebfb36d11040543bdcc57b2afc75e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftArm: {fileID: 1625873534}
-  rightArm: {fileID: 468269463}
-  leftLeg: {fileID: 1769885749}
-  rightLeg: {fileID: 795623590}
-  power: 1000
+  leftArm: {fileID: 1625873533}
+  rightArm: {fileID: 468269462}
+  leftLeg: {fileID: 1769885748}
+  rightLeg: {fileID: 795623589}
+  power: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +892,7 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.5}
   m_ConnectedAnchor: {x: 0.2857669, y: -0.5137055}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
@@ -1239,7 +1239,7 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.5}
   m_ConnectedAnchor: {x: -0.62263834, y: 0.22083107}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
@@ -1423,7 +1423,7 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.5}
   m_ConnectedAnchor: {x: -0.28566194, y: -0.5137055}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
