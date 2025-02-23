@@ -26,7 +26,6 @@ public class Brick : MonoBehaviour
 	}
 	bool HasBeenMoved() {
 		return (Math.Abs(transform.rotation.z % 180) >= 0.01) || (GetBottomYCoordinate() < tablePlatform.transform.position.y);
-		// return Vector3.Distance(transform.position, startPos) > minimumMovedDist;
 	}
 	
 	void AcknowledgeMovement() {
