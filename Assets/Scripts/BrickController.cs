@@ -7,6 +7,7 @@ public class Brick : MonoBehaviour
 {
 	
 	public ScoreboardController scoreboard;
+	public GameObject tablePlatform;
 	private const float minimumMovedDist = 0.1f;
 	private Vector3 startPos;
 	private bool wasMoved = false;
@@ -21,7 +22,7 @@ public class Brick : MonoBehaviour
     }
 	
 	bool HasBeenMoved() {
-		return Math.Abs(transform.rotation.z % 180) >= 0.01;
+		return (Math.Abs(transform.rotation.z % 180) >= 0.01) || (transform.position.y < tablePlatform.transform.position.y);
 		// return Vector3.Distance(transform.position, startPos) > minimumMovedDist;
 	}
 	
