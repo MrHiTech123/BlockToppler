@@ -5,8 +5,10 @@ using UnityEngine;
 public class Brick : MonoBehaviour
 {
 	
+	public ScoreboardController scoreboard;
 	private const float minimumMovedDist = 0.1f;
 	private Vector3 startPos;
+	private bool wasMoved = false;
     // Start is called before the first frame update
 	
 	private static Vector3 CopyVector3(Vector3 toCopy) {
@@ -23,14 +25,12 @@ public class Brick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (HasBeenMoved()) {
-			Debug.Log("Moved!");
-		}
-		else {
-			Debug.Log("Not moved");
+        if (!wasMoved && HasBeenMoved()) {
+			Debug.Log("Moving");
+			wasMoved = true;
+			++scoreboard.score;
+			this.GetComponent<SpriteRenderer>().color = Color.black;
 		}
 		
-		Debug.Log("Old " + startPos);
-		Debug.Log("New " + transform.position);
     }
 }
