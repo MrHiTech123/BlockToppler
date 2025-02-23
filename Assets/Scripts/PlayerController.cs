@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour
 			rightArmMotor.motorSpeed = MoveToZero(rightArmMotor.motorSpeed, rightArmMotor.motorSpeed, armPower);
 		}
 		
-		if (Input.GetKey(KeyCode.Space)) {
+		if (Input.GetKey(KeyCode.A)) {
 			hand.breakForce = 0;
 		}
 		
