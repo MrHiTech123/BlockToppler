@@ -50,9 +50,12 @@ public class PlayerController : MonoBehaviour
 		return speed;
 	}
 	
+	/*Moves angle from 0 by changing num by delta, in the appropriate direction*/
 	float MoveFromZero(float angle, float num, float delta) {
 		return ChangeAbsValue(angle, num, delta);
 	}
+	
+	/*Moves angle to 0 by changing num by delta, in the appropriate direction*/
 	float MoveToZero(float angle, float num, float delta) {
 		return ChangeAbsValue(angle, num, -delta);
 	}
@@ -73,11 +76,14 @@ public class PlayerController : MonoBehaviour
 	
 	// Requires: motors are gotten and will be set
 	void MoveArmsGM() {
-		if (Input.GetKey(KeyCode.D)) {
+		if (Input.GetKey(KeyCode.S)) {
 			leftArmMotor.motorSpeed = MoveToZero(leftArm.jointAngle, leftArmMotor.motorSpeed, armPower);
 		}
+		if (Input.GetKey(KeyCode.D)) {
+			leftArmMotor.motorSpeed -= armPower;
+		}
 		else if (Input.GetKey(KeyCode.F)) {
-			leftArmMotor.motorSpeed = MoveFromZero(leftArm.jointAngle, leftArmMotor.motorSpeed, armPower);
+			leftArmMotor.motorSpeed += armPower;
 		}
 		else {
 			leftArmMotor.motorSpeed = MoveToZero(leftArmMotor.motorSpeed, leftArmMotor.motorSpeed, armPower);
@@ -86,9 +92,12 @@ public class PlayerController : MonoBehaviour
 		
 		
 		if (Input.GetKey(KeyCode.J)) {
-			rightArmMotor.motorSpeed = MoveFromZero(rightArm.jointAngle, rightArmMotor.motorSpeed, armPower);
+			rightArmMotor.motorSpeed += armPower;
 		}
 		else if (Input.GetKey(KeyCode.K)) {
+			rightArmMotor.motorSpeed -= armPower;
+		}
+		else if (Input.GetKey(KeyCode.L)) {
 			rightArmMotor.motorSpeed = MoveToZero(rightArm.jointAngle, rightArmMotor.motorSpeed, armPower);
 		}
 		else {
