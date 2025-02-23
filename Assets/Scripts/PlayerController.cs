@@ -70,9 +70,9 @@ public class PlayerController : MonoBehaviour
 		leftLeg.motor = leftLegMotor;
 		rightLeg.motor = rightLegMotor;
 	}
-	void DoMovement() {
-		GetMotors();
-		
+	
+	// Requires: motors are gotten and will be set
+	void MoveArmsGM() {
 		if (Input.GetKey(KeyCode.D)) {
 			leftArmMotor.motorSpeed = MoveToZero(leftArm.jointAngle, leftArmMotor.motorSpeed, armPower);
 		}
@@ -83,25 +83,7 @@ public class PlayerController : MonoBehaviour
 			leftArmMotor.motorSpeed = MoveToZero(leftArmMotor.motorSpeed, leftArmMotor.motorSpeed, armPower);
 		}
 		
-		if (Input.GetKey(KeyCode.C)) {
-			leftLegMotor.motorSpeed = legPower;
-		}
-		else if (Input.GetKey(KeyCode.V)) {
-			leftLegMotor.motorSpeed = -legPower;
-		}
-		else {
-			leftLegMotor.motorSpeed = 0;
-		}
 		
-		if (Input.GetKey(KeyCode.N)) {
-			rightLegMotor.motorSpeed = legPower;
-		}
-		else if (Input.GetKey(KeyCode.M)) {
-			rightLegMotor.motorSpeed = -legPower;
-		}
-		else {
-			rightLegMotor.motorSpeed = 0;
-		}
 		
 		if (Input.GetKey(KeyCode.J)) {
 			rightArmMotor.motorSpeed = MoveFromZero(rightArm.jointAngle, rightArmMotor.motorSpeed, armPower);
@@ -123,7 +105,34 @@ public class PlayerController : MonoBehaviour
 		if (rightArmMotor.motorSpeed != 0 && rightArm.jointSpeed / rightArmMotor.motorSpeed < 0) {
 			rightArmMotor.motorSpeed = 0;
 		}
+	}
+	
+	// Requires: motors are gotten and will be set
+	void MoveLegsGM() {
+		if (Input.GetKey(KeyCode.C)) {
+			leftLegMotor.motorSpeed = legPower;
+		}
+		else if (Input.GetKey(KeyCode.V)) {
+			leftLegMotor.motorSpeed = -legPower;
+		}
+		else {
+			leftLegMotor.motorSpeed = 0;
+		}
 		
+		if (Input.GetKey(KeyCode.N)) {
+			rightLegMotor.motorSpeed = legPower;
+		}
+		else if (Input.GetKey(KeyCode.M)) {
+			rightLegMotor.motorSpeed = -legPower;
+		}
+		else {
+			rightLegMotor.motorSpeed = 0;
+		}
+	}
+	void DoMovement() {
+		GetMotors();
+		MoveArmsGM();
+		MoveLegsGM();
 		SetMotors();
 	}
 	
