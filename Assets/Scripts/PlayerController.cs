@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
 		if (Input.GetKey(KeyCode.S)) {
 			leftArmMotor.motorSpeed = MoveToZero(leftArm.jointAngle, leftArmMotor.motorSpeed, armPower);
 		}
-		if (Input.GetKey(KeyCode.D)) {
+		else if (Input.GetKey(KeyCode.D)) {
 			leftArmMotor.motorSpeed -= armPower;
 		}
 		else if (Input.GetKey(KeyCode.F)) {
