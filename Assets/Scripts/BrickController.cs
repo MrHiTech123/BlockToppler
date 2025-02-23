@@ -29,7 +29,6 @@ public class Brick : MonoBehaviour
 			Debug.Log("Moving");
 			wasMoved = true;
 			++scoreboard.score;
-			this.GetComponent<SpriteRenderer>().color = Color.black;
 		}
 		
     }
