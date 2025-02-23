@@ -400,8 +400,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 100
   m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -180
+    m_UpperAngle: 180
 --- !u!50 &468269463
 Rigidbody2D:
   serializedVersion: 4
@@ -866,7 +866,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1631,8 +1631,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 100
   m_UseLimits: 0
   m_AngleLimits:
-    m_LowerAngle: -10000
-    m_UpperAngle: 10000
+    m_LowerAngle: -179
+    m_UpperAngle: 179
 --- !u!50 &1625873534
 Rigidbody2D:
   serializedVersion: 4
@@ -1669,7 +1669,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1625873530}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 90f014bc3e2779b4e854182878abc66e, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1829,7 +1829,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1

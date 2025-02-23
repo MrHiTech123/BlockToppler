@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,7 +20,7 @@ public class PlayerController : MonoBehaviour
 	
 	
 	private float armPower = 1;
-	private float legPower = 100;
+	private float legPower = 10000;
 	
     // Start is called before the first frame update
     void Start()
@@ -35,12 +36,17 @@ public class PlayerController : MonoBehaviour
 		@param delta: the magnitude of the change. If negative, the absoluate value is moved to be that much closer to 0.
 	*/
 	float ChangeAbsValue(float angle, float speed, float delta) {
+		float sign = speed / Math.Abs(speed);
 		if (angle >= 0) {
 			speed += delta;
 		}
 		else {
 			speed += -delta;
 		}
+		if ((sign > 0 && speed < 0) || (sign < 0 && speed > 0)) {
+			speed = 0;
+		}
+		
 		return speed;
 	}
 	
@@ -75,7 +81,7 @@ public class PlayerController : MonoBehaviour
 			leftArmMotor.motorSpeed = MoveFromZero(leftArm.jointAngle, leftArmMotor.motorSpeed, armPower);
 		}
 		else {
-			leftArmMotor.motorSpeed /= 1.1f;
+			leftArmMotor.motorSpeed = MoveToZero(leftArmMotor.motorSpeed, leftArmMotor.motorSpeed, armPower);
 		}
 		
 		if (Input.GetKey(KeyCode.C)) {
@@ -105,11 +111,18 @@ public class PlayerController : MonoBehaviour
 			rightArmMotor.motorSpeed = MoveToZero(rightArm.jointAngle, rightArmMotor.motorSpeed, armPower);
 		}
 		else {
-			rightArmMotor.motorSpeed /= 1.1f;
+			rightArmMotor.motorSpeed = MoveToZero(rightArmMotor.motorSpeed, rightArmMotor.motorSpeed, armPower);
 		}
 		
 		if (Input.GetKey(KeyCode.Space)) {
 			hand.breakForce = 0;
+		}
+		
+		if (leftArmMotor.motorSpeed != 0 && leftArm.jointSpeed / leftArmMotor.motorSpeed < 0) {
+			leftArmMotor.motorSpeed = 0;
+		}
+		if (rightArmMotor.motorSpeed != 0 && rightArm.jointSpeed / rightArmMotor.motorSpeed < 0) {
+			rightArmMotor.motorSpeed = 0;
 		}
 		
 		
@@ -124,6 +137,9 @@ public class PlayerController : MonoBehaviour
     {
 		Debug.Log("Updating");
         DoMovement();
+		
+		leftArmMotor = leftArm.motor;
+		Debug.Log("leftArmMotor.motorspeed " + leftArmMotor.motorSpeed);
 		
     }
 }
