@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,15 +21,30 @@ public class Brick : MonoBehaviour
     }
 	
 	bool HasBeenMoved() {
-		return Vector3.Distance(transform.position, startPos) > minimumMovedDist;
+		return Math.Abs(transform.rotation.z % 180) >= 0.01;
+		// return Vector3.Distance(transform.position, startPos) > minimumMovedDist;
 	}
+	
+	void AcknowledgeMovement() {
+		Debug.Log("Moving");
+		wasMoved = true;
+		++scoreboard.score;
+	}
+	
+	void UnAcknowledgeMovement() {
+		Debug.Log("Up Top");
+		wasMoved = false;
+		--scoreboard.score;
+	}
+	
     // Update is called once per frame
     void Update()
     {
         if (!wasMoved && HasBeenMoved()) {
-			Debug.Log("Moving");
-			wasMoved = true;
-			++scoreboard.score;
+			AcknowledgeMovement();
+		}
+		if (wasMoved && !HasBeenMoved()) {
+			UnAcknowledgeMovement();
 		}
 		
     }

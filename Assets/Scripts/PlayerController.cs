@@ -90,7 +90,6 @@ public class PlayerController : MonoBehaviour
 		}
 		
 		
-		
 		if (Input.GetKey(KeyCode.J)) {
 			rightArmMotor.motorSpeed += armPower;
 		}
