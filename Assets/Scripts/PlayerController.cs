@@ -73,7 +73,6 @@ public class PlayerController : MonoBehaviour
 	void DoMovement() {
 		GetMotors();
 		
-		Debug.Log("Doing movement");
 		if (Input.GetKey(KeyCode.D)) {
 			leftArmMotor.motorSpeed = MoveToZero(leftArm.jointAngle, leftArmMotor.motorSpeed, armPower);
 		}
@@ -125,21 +124,12 @@ public class PlayerController : MonoBehaviour
 			rightArmMotor.motorSpeed = 0;
 		}
 		
-		
-		Debug.Log("Left angle " + leftArm.jointAngle);
-		Debug.Log("Right angle " + rightArm.jointAngle);
-		
 		SetMotors();
 	}
 	
     // Update is called once per frame
     void Update()
     {
-		Debug.Log("Updating");
         DoMovement();
-		
-		leftArmMotor = leftArm.motor;
-		Debug.Log("leftArmMotor.motorspeed " + leftArmMotor.motorSpeed);
-		
     }
 }
