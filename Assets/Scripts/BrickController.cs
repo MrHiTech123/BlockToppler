@@ -30,13 +30,11 @@ public class Brick : MonoBehaviour
 	}
 	
 	void AcknowledgeMovement() {
-		Debug.Log("Moving");
 		wasMoved = true;
 		++scoreboard.score;
 	}
 	
 	void UnAcknowledgeMovement() {
-		Debug.Log("Up Top");
 		wasMoved = false;
 		--scoreboard.score;
 	}
