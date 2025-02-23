@@ -21,8 +21,11 @@ public class Brick : MonoBehaviour
         startPos = CopyVector3(transform.position);
     }
 	
+	float GetBottomYCoordinate() {
+		return transform.position.y - (GetComponent<SpriteRenderer>().bounds.size.y / 2);
+	}
 	bool HasBeenMoved() {
-		return (Math.Abs(transform.rotation.z % 180) >= 0.01) || (transform.position.y < tablePlatform.transform.position.y);
+		return (Math.Abs(transform.rotation.z % 180) >= 0.01) || (GetBottomYCoordinate() < tablePlatform.transform.position.y);
 		// return Vector3.Distance(transform.position, startPos) > minimumMovedDist;
 	}
 	

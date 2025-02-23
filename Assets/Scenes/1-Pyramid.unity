@@ -174,6 +174,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: scoreboard
+      value: 
+      objectReference: {fileID: 1156758497}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: tablePlatform
+      value: 
+      objectReference: {fileID: 1764040530}
     - target: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       propertyPath: m_Name
       value: Brick (2)
@@ -233,9 +241,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 33215369}
-    - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 33215366}
   m_SourcePrefab: {fileID: 100100000, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
 --- !u!4 &33215364 stripped
 Transform:
@@ -247,19 +252,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
   m_PrefabInstance: {fileID: 33215363}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &33215366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33215365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0113e49c90c68d14ea2e6c46046c9554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1156758497}
 --- !u!212 &33215369
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -364,6 +356,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: scoreboard
+      value: 
+      objectReference: {fileID: 1156758497}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: tablePlatform
+      value: 
+      objectReference: {fileID: 1764040530}
     - target: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       propertyPath: m_Name
       value: Brick (8)
@@ -423,9 +423,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 107768941}
-    - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 107768938}
   m_SourcePrefab: {fileID: 100100000, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
 --- !u!4 &107768936 stripped
 Transform:
@@ -437,19 +434,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
   m_PrefabInstance: {fileID: 107768935}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &107768938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 107768937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0113e49c90c68d14ea2e6c46046c9554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1156758497}
 --- !u!212 &107768941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1189,6 +1173,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: scoreboard
+      value: 
+      objectReference: {fileID: 1156758497}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: tablePlatform
+      value: 
+      objectReference: {fileID: 1764040530}
     - target: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       propertyPath: m_Name
       value: Brick (11)
@@ -1248,9 +1240,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 534343272}
-    - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 534343269}
   m_SourcePrefab: {fileID: 100100000, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
 --- !u!4 &534343267 stripped
 Transform:
@@ -1262,19 +1251,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
   m_PrefabInstance: {fileID: 534343266}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &534343269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534343268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0113e49c90c68d14ea2e6c46046c9554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1156758497}
 --- !u!212 &534343272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1379,6 +1355,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: scoreboard
+      value: 
+      objectReference: {fileID: 1156758497}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: tablePlatform
+      value: 
+      objectReference: {fileID: 1764040530}
     - target: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       propertyPath: m_Name
       value: Brick (9)
@@ -1438,9 +1422,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 643641357}
-    - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 643641354}
   m_SourcePrefab: {fileID: 100100000, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
 --- !u!4 &643641352 stripped
 Transform:
@@ -1452,19 +1433,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
   m_PrefabInstance: {fileID: 643641351}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &643641354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643641353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0113e49c90c68d14ea2e6c46046c9554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1156758497}
 --- !u!212 &643641357
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1699,6 +1667,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: scoreboard
+      value: 
+      objectReference: {fileID: 1156758497}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: tablePlatform
+      value: 
+      objectReference: {fileID: 1764040530}
     - target: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       propertyPath: m_Name
       value: Brick (7)
@@ -1758,9 +1734,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 670780275}
-    - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 670780272}
   m_SourcePrefab: {fileID: 100100000, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
 --- !u!4 &670780270 stripped
 Transform:
@@ -1772,19 +1745,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
   m_PrefabInstance: {fileID: 670780269}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &670780272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670780271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0113e49c90c68d14ea2e6c46046c9554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1156758497}
 --- !u!212 &670780275
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2206,7 +2166,7 @@ GameObject:
   - component: {fileID: 883600735}
   - component: {fileID: 883600737}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2591,6 +2551,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: scoreboard
+      value: 
+      objectReference: {fileID: 1156758497}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: tablePlatform
+      value: 
+      objectReference: {fileID: 1764040530}
     - target: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       propertyPath: m_Name
       value: Brick (6)
@@ -2650,9 +2618,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1172725575}
-    - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1172725572}
   m_SourcePrefab: {fileID: 100100000, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
 --- !u!4 &1172725570 stripped
 Transform:
@@ -2664,19 +2629,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
   m_PrefabInstance: {fileID: 1172725569}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1172725572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172725571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0113e49c90c68d14ea2e6c46046c9554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1156758497}
 --- !u!212 &1172725575
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2781,6 +2733,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: scoreboard
+      value: 
+      objectReference: {fileID: 1156758497}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: tablePlatform
+      value: 
+      objectReference: {fileID: 1764040530}
     - target: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       propertyPath: m_Name
       value: Brick (12)
@@ -2840,9 +2800,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1266724294}
-    - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1266724291}
   m_SourcePrefab: {fileID: 100100000, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
 --- !u!4 &1266724289 stripped
 Transform:
@@ -2854,19 +2811,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
   m_PrefabInstance: {fileID: 1266724288}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1266724291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266724290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0113e49c90c68d14ea2e6c46046c9554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1156758497}
 --- !u!212 &1266724294
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3469,6 +3413,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: scoreboard
+      value: 
+      objectReference: {fileID: 1156758497}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: tablePlatform
+      value: 
+      objectReference: {fileID: 1764040530}
     - target: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       propertyPath: m_Name
       value: Brick (3)
@@ -3528,9 +3480,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1582797239}
-    - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1582797236}
   m_SourcePrefab: {fileID: 100100000, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
 --- !u!4 &1582797234 stripped
 Transform:
@@ -3542,19 +3491,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
   m_PrefabInstance: {fileID: 1582797233}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1582797236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1582797235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0113e49c90c68d14ea2e6c46046c9554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1156758497}
 --- !u!212 &1582797239
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3843,6 +3779,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: scoreboard
+      value: 
+      objectReference: {fileID: 1156758497}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: tablePlatform
+      value: 
+      objectReference: {fileID: 1764040530}
     - target: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       propertyPath: m_Name
       value: Brick
@@ -3898,10 +3842,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1830165297}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
 --- !u!1 &1653471489
 GameObject:
@@ -4017,7 +3958,7 @@ GameObject:
   - component: {fileID: 1764040531}
   - component: {fileID: 1764040533}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4489,29 +4430,11 @@ Transform:
   - {fileID: 847046228}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1830165292 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
-  m_PrefabInstance: {fileID: 1628401221}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1830165296 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7699980104485089667, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
   m_PrefabInstance: {fileID: 1628401221}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1830165297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1830165292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0113e49c90c68d14ea2e6c46046c9554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1156758497}
 --- !u!1001 &1904020457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4568,6 +4491,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: scoreboard
+      value: 
+      objectReference: {fileID: 1156758497}
+    - target: {fileID: 714562086602892476, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
+      propertyPath: tablePlatform
+      value: 
+      objectReference: {fileID: 1764040530}
     - target: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       propertyPath: m_Name
       value: Brick (1)
@@ -4627,9 +4558,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1904020463}
-    - targetCorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1904020460}
   m_SourcePrefab: {fileID: 100100000, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
 --- !u!4 &1904020458 stripped
 Transform:
@@ -4641,19 +4569,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2694789893277326227, guid: 28c6868e2a56a99438ac9a61a9af14c3, type: 3}
   m_PrefabInstance: {fileID: 1904020457}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1904020460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904020459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0113e49c90c68d14ea2e6c46046c9554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreboard: {fileID: 1156758497}
 --- !u!212 &1904020463
 SpriteRenderer:
   m_ObjectHideFlags: 0

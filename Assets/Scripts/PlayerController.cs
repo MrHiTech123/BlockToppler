@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour
 	private JointMotor2D rightLegMotor;
 	
 	
-	
 	private float armPower = 3;
 	private float legPower = 100;
 	
@@ -74,6 +73,7 @@ public class PlayerController : MonoBehaviour
 		rightLeg.motor = rightLegMotor;
 	}
 	
+	
 	// Requires: motors are gotten and will be set
 	void MoveArmsGM() {
 		if (Input.GetKey(KeyCode.S)) {
@@ -91,10 +91,10 @@ public class PlayerController : MonoBehaviour
 		
 		
 		if (Input.GetKey(KeyCode.J)) {
-			rightArmMotor.motorSpeed += armPower;
+			rightArmMotor.motorSpeed -= armPower;
 		}
 		else if (Input.GetKey(KeyCode.K)) {
-			rightArmMotor.motorSpeed -= armPower;
+			rightArmMotor.motorSpeed += armPower;
 		}
 		else if (Input.GetKey(KeyCode.L)) {
 			rightArmMotor.motorSpeed = MoveToZero(rightArm.jointAngle, rightArmMotor.motorSpeed, armPower);
@@ -114,6 +114,7 @@ public class PlayerController : MonoBehaviour
 			rightArmMotor.motorSpeed = 0;
 		}
 	}
+	
 	
 	// Requires: motors are gotten and will be set
 	void MoveLegsGM() {
