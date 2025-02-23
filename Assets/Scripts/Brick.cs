@@ -5,7 +5,7 @@ using UnityEngine;
 public class Brick : MonoBehaviour
 {
 	
-	private const float minimumMovedDist = 0.001f;
+	private const float minimumMovedDist = 0.1f;
 	private Vector3 startPos;
     // Start is called before the first frame update
 	

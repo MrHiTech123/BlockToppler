@@ -19,8 +19,8 @@ public class PlayerController : MonoBehaviour
 	
 	
 	
-	private float armPower = 1;
-	private float legPower = 10000;
+	private float armPower = 3;
+	private float legPower = 100;
 	
     // Start is called before the first frame update
     void Start()
