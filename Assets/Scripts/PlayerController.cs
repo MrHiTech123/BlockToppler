@@ -110,10 +110,10 @@ public class PlayerController : MonoBehaviour
 			rightArmMotor.motorSpeed = MoveToZero(rightArmMotor.motorSpeed, rightArmMotor.motorSpeed, armPower);
 		}
 		
-		if (Input.GetKey(KeyCode.A)) {
+		if (hand != null && Input.GetKey(KeyCode.A)) {
 			hand.breakForce = 0;
 		}
-		
+				
 		if (leftArmMotor.motorSpeed != 0 && leftArm.jointSpeed / leftArmMotor.motorSpeed < 0) {
 			leftArmMotor.motorSpeed = 0;
 		}

@@ -1048,7 +1048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d285a3f62c6607439e214312f5c2331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 4-PyramidWall
+  scene: 3-PyramidBounce
 --- !u!1001 &534343266
 PrefabInstance:
   m_ObjectHideFlags: 0

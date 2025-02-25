@@ -27,11 +27,9 @@ public class SoundOnCollision : MonoBehaviour
     }
 	
 	float MapRangeOntoOtherRange(float value, float r1Min, float r1Max, float r2Min, float r2Max) {
-		Debug.Log(value + " " + r1Min + " " + r1Max + " " + r2Min + " " + r2Max);
 		value = Math.Clamp(value, r1Min, r1Max);
 		float scale = (r2Max - r2Min) / (r1Max - r1Min);
 		value = r2Min + ((value - r1Min) * scale);
-		Debug.Log(value);
 		return value;
 	}
 	void OnCollisionEnter2D(Collision2D collision)
