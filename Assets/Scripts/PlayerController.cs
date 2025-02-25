@@ -18,11 +18,16 @@ public class PlayerController : MonoBehaviour
 	private JointMotor2D rightLegMotor;
 	
 	
-	private float armPower = 3;
-	private float legPower = 100;
-	
-    // Start is called before the first frame update
-    void Start()
+	private float armPower = 30;
+	private float legPower = 200;
+
+
+	void Awake()
+	{
+		Application.targetFrameRate = 60;
+	}
+	// Start is called before the first frame update
+	void Start()
     {
 		GetMotors();
 		SetMotors();
@@ -146,7 +151,7 @@ public class PlayerController : MonoBehaviour
 	}
 	
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         DoMovement();
     }
