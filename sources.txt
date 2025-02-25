@@ -8,3 +8,7 @@ https://discussions.unity.com/t/initial-value-of-joint-angle-for-hingejoint2d/26
 Art credit:
 Milk bottle (unlikely to be used)
 https://bangbloom.itch.io/pickaxe-shield-chest-hammer-bottle-knife-cartoon
+
+Wood sound:
+Dodgy_C_Wood_Block.wav by Dodgy C -- https://freesound.org/s/53387/ -- License: Attribution 4.0
+rubber-ball-01.flac by pbimal -- https://freesound.org/s/534110/ -- License: Creative Commons 0
