@@ -40,14 +40,16 @@ public class PlayerController : MonoBehaviour
 		@param delta: the magnitude of the change. If negative, the absoluate value is moved to be that much closer to 0.
 	*/
 	float ChangeAbsValue(float angle, float speed, float delta) {
-		float sign = speed / Math.Abs(speed);
+		float originalSpeed = speed;
+		
 		if (angle >= 0) {
 			speed += delta;
 		}
 		else {
 			speed += -delta;
 		}
-		if ((sign > 0 && speed < 0) || (sign < 0 && speed > 0)) {
+		
+		if ((originalSpeed >= 0 && speed <= 0) || (originalSpeed <= 0 && speed >= 0)) {
 			speed = 0;
 		}
 		
@@ -112,6 +114,8 @@ public class PlayerController : MonoBehaviour
 			hand.breakForce = 0;
 		}
 		
+		Debug.Log("leftArmMotor " + leftArmMotor.motorSpeed);
+		Debug.Log("rightArmMotor " + rightArmMotor.motorSpeed);
 		if (leftArmMotor.motorSpeed != 0 && leftArm.jointSpeed / leftArmMotor.motorSpeed < 0) {
 			leftArmMotor.motorSpeed = 0;
 		}
