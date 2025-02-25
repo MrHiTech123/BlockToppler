@@ -1863,6 +1863,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  requiredScore: 10
+  nextLevelSceneName: 2-PyramidTable
 --- !u!1001 &1172725569
 PrefabInstance:
   m_ObjectHideFlags: 0
