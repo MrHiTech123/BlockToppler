@@ -114,8 +114,6 @@ public class PlayerController : MonoBehaviour
 			hand.breakForce = 0;
 		}
 		
-		Debug.Log("leftArmMotor " + leftArmMotor.motorSpeed);
-		Debug.Log("rightArmMotor " + rightArmMotor.motorSpeed);
 		if (leftArmMotor.motorSpeed != 0 && leftArm.jointSpeed / leftArmMotor.motorSpeed < 0) {
 			leftArmMotor.motorSpeed = 0;
 		}
