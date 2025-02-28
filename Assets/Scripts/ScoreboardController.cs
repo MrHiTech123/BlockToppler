@@ -37,7 +37,7 @@ public class ScoreboardController : MonoBehaviour
 		}
 	}
 	void PrintScore() {
-		GetComponent<TextMeshProUGUI>().text = "Score: " + score;
+		GetComponent<TextMeshProUGUI>().text = "Blocks Toppled: " + score + "/" + requiredScore;
 	}
 	
 	
